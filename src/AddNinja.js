@@ -9,6 +9,9 @@ class AddNinja extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     this.props.addingNinja(this.state);
+    this.setState({
+    content: ''
+    })
   }
 
   handleLabelChange = (e) => {
@@ -92,10 +95,10 @@ class AddNinja extends Component {
       <div >
         <form className="toTitle" onSubmit={this.handleSubmit}>
           <label htmlFor="name">Name:</label>
-          <input type="text" id='name' onChange={this.handleChange} />
+          <input type="text" id='name' onChange={this.handleChange} value={this.state.content} />
 
           <label htmlFor="specialty">Specialty:</label>
-          <select id='specialty' onChange={this.handleLabelChange}>
+          <select id='specialty' onChange={this.handleLabelChange} value={this.state.content} >
             <option defaultValue="none"></option>
             <option value="Winged Horse Kick">Winged Horse Kick</option>
             <option value="Leaping Tiger Kick">Leaping Tiger Kick</option>

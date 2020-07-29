@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 import star from './star.svg';
 import './App.css';
 import Ninjas from './Ninjas';
-//import Missions from './Missions';
+import Todos from './Todos';
 import AddNinja from './AddNinja';
-//import 'bootstrap/dist/css/bootstrap.min.css';
+import AddTodo from './AddTodo';
 
 
 class App extends Component {
@@ -14,7 +14,9 @@ class App extends Component {
       showMissions:false,
       ninjas: [
       ],
-      missions: [
+      missionTodos: [
+        {id:309, content: 'sneak past guards'},
+        {id:314, content: 'go to bottom of ship, pull drain plugs'},
       ]
     }
   };
@@ -32,6 +34,21 @@ class App extends Component {
     });
     this.setState({
       ninjas: newNinjas
+    })
+  }
+  addTodo = (todo) =>{
+    todo.id = Math.random();
+    let todos = [...this.state.missionTodos, todo];
+    this.setState({
+      missionTodos: todos
+    })
+  }
+  deleteTodo =  (id) =>{
+    let newTodos = this.state.missionTodos.filter(todo =>{
+      return todo.id !== id
+    });
+       this.setState({
+      missionTodos: newTodos
     })
   }
   operation(){
@@ -58,20 +75,20 @@ class App extends Component {
         
         <AddNinja addingNinja={this.addingNinja} />
 
-        <button onClick={()=>this.operation()}>Show Missions</button>
+        <button onClick={()=>this.operation()}>Red Blood Dawn</button>
 
         <Ninjas ninjas={this.state.ninjas}  deleteNinja={this.deleteNinja} />
 
         {
         this.state.showMissions?
         <div>
-        Emporer Assigned Missions:
-
-          <div>
-          Hello Ninja..No missions at the moment.
-          </div>
+          <h2 className="center">Current Mission: </h2>
+          <h6>Description: Rescue Princess Takara from mongols</h6>
+          <Todos todos={this.state.missionTodos} deleteTodo={this.deleteTodo} />
+          <AddTodo addTodo={this.addTodo} />
         </div>
         :null
+
         }
 
       </div>
