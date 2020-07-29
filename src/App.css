@@ -1,7 +1,14 @@
+body{
+  background-color: #282c34;
+}
 .App {
   text-align: center;
+  min-height: 100vh;
+  color:#61dafb;
 }
-
+button{
+  max-width: 7rem;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -9,17 +16,16 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 50s linear;
   }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 20vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -27,7 +33,24 @@
 .App-link {
   color: #61dafb;
 }
-
+.toTitle{
+  display: flex;
+  text-transform: capitalize;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1rem;
+  max-width: 40vw;
+  margin-top: 0.5rem;
+  margin-left: 30vw;
+}
+.ninja{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.ninja img{
+  max-width: 70px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
