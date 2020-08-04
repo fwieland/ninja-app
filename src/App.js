@@ -2,9 +2,12 @@ import React, {Component} from 'react';
 import star from './star.svg';
 import './App.css';
 import Ninjas from './Ninjas';
-import Todos from './Todos';
 import AddNinja from './AddNinja';
-import AddTodo from './AddTodo';
+import{BrowserRouter} from 'react-router-dom';
+import Create from './missions/Create';
+import RedDawn from './missions/RedDawn';
+import Firebase from './missions/Firebase';
+import Killfox from './missions/Killfox';
 
 
 class App extends Component {
@@ -15,12 +18,7 @@ class App extends Component {
       ninjas: [
       ],
       missionTodos: [
-        {id: 1, content: 'sneak past guards'},
-        {id: 2, content: 'go to bottom of ship, pull drain plugs'},
-        {id: 3, content: 'knock out guard'},
-        {id: 4, content: '(create more mission todos...)'},
-
-      ]
+      ],
     }
   };
 
@@ -39,21 +37,7 @@ class App extends Component {
       ninjas: newNinjas
     })
   }
-  addTodo = (todo) =>{
-    todo.id = Math.random();
-    let todos = [...this.state.missionTodos, todo];
-    this.setState({
-      missionTodos: todos
-    })
-  }
-  deleteTodo =  (id) =>{
-    let newTodos = this.state.missionTodos.filter(todo =>{
-      return todo.id !== id
-    });
-       this.setState({
-      missionTodos: newTodos
-    })
-  }
+
   operation(){
     this.setState({
       showMissions:!this.state.showMissions
@@ -68,6 +52,7 @@ class App extends Component {
   }
   render() {
     return (
+      <BrowserRouter>
       <div className="App">
 
         <header className="App-header">
@@ -78,23 +63,21 @@ class App extends Component {
         
         <AddNinja addingNinja={this.addingNinja} />
 
+        <button onClick={()=>this.operation()}>Create Mission</button>
         <button onClick={()=>this.operation()}>Mission: Red Blood Dawn</button>
-
+        <button onClick={()=>this.operation()}>Mission: Firebase</button>
+        <button onClick={()=>this.operation()}>Mission: To Kill A Fox</button>
         <Ninjas ninjas={this.state.ninjas}  deleteNinja={this.deleteNinja} />
 
-        {this.state.showMissions?
-        <div className="mission">
-          <h2 className="center">Red Blood Dawn</h2>
-          <h4>Princess Takara has been captured by the invading Mongolians! She is held up in the fortress of Hirado.  You must be silent as the night to sneek past troops in a heavily guarded building. </h4>
-          <h4> The Emperor Is Expecting Nothing Less Than The Full Recovery of His Daughter </h4>
-          <h3>Mission To Do List</h3>
-          <Todos todos={this.state.missionTodos} deleteTodo={this.deleteTodo} />
-          <AddTodo addTodo={this.addTodo} />
-        </div>
-        :null}
+        {this.state.showMissions? <Create />       :null}
+        {this.state.showMissions? <RedDawn />       :null}
+        {this.state.showMissions? <Firebase />       :null}
+        {this.state.showMissions? <Killfox />       :null}
 
       </div>
+      </BrowserRouter>
     );
   }
 }
 export default App;
+
