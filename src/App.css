@@ -1,10 +1,45 @@
+@font-face { font-family: NightinTokyo; src: url('./NightinTokyo.ttf'); }
+@font-face { font-family: RagingRedLotusBB; src: url('./RagingRedLotusBB.ttf')}
+
 body{
-  background-color: #282c34;
+  background-color: rgb(43,43,43);
+}
+span, div, button, input, select, option, h4, h5, h6{
+  font-family: RagingRedLotusBB;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+h1, h2, h3  {
+  font-family: NightinTokyo;
+  font-size: 3rem;
+  color: lightblue;
+  margin-top: 4rem;
+}
+h1{
+  font-size: 4rem;
+  margin: 0.1em;
+}
+h3{
+  text-decoration: underline;
+}
+label{
+  color: lightblue;
+}
+div{
+  text-transform: capitalize;
+}
+span{
+  color: white;
 }
 .App {
   text-align: center;
   min-height: 100vh;
-  color:#61dafb;
+  color:white;
+}
+.mission{
+  max-width: 66vw;
+  margin: 0 auto;
 }
 button{
   max-width: 7rem;
@@ -16,14 +51,14 @@ button{
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 50s linear;
+    animation: App-logo-spin infinite 12s linear;
   }
 }
 
 .App-header {
   min-height: 20vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   font-size: calc(10px + 2vmin);
@@ -35,13 +70,17 @@ button{
 }
 .toTitle{
   display: flex;
+  flex-wrap: wrap;
   text-transform: capitalize;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 1rem;
-  max-width: 40vw;
+  min-width: 40vw;
   margin-top: 0.5rem;
-  margin-left: 30vw;
+  margin: 0 auto;
+}
+form{
+  height: 66vw;
 }
 .ninja{
   display: flex;

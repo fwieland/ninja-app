@@ -15,8 +15,11 @@ class App extends Component {
       ninjas: [
       ],
       missionTodos: [
-        {id:309, content: 'sneak past guards'},
-        {id:314, content: 'go to bottom of ship, pull drain plugs'},
+        {id: 1, content: 'sneak past guards'},
+        {id: 2, content: 'go to bottom of ship, pull drain plugs'},
+        {id: 3, content: 'knock out guard'},
+        {id: 4, content: '(create more mission todos...)'},
+
       ]
     }
   };
@@ -69,31 +72,29 @@ class App extends Component {
 
         <header className="App-header">
           <img src={star} className="App-logo" alt="logo" />
-          <h1>Shinobi Ninja</h1>
-          <img src={star} className="App-logo" alt="logo" />
+          <h1>Shinobi</h1>
+          <h1>Ninja</h1>
         </header>
         
         <AddNinja addingNinja={this.addingNinja} />
 
-        <button onClick={()=>this.operation()}>Red Blood Dawn</button>
+        <button onClick={()=>this.operation()}>Mission: Red Blood Dawn</button>
 
         <Ninjas ninjas={this.state.ninjas}  deleteNinja={this.deleteNinja} />
 
-        {
-        this.state.showMissions?
-        <div>
-          <h2 className="center">Current Mission: </h2>
-          <h6>Description: Rescue Princess Takara from mongols</h6>
+        {this.state.showMissions?
+        <div className="mission">
+          <h2 className="center">Red Blood Dawn</h2>
+          <h4>Princess Takara has been captured by the invading Mongolians! She is held up in the fortress of Hirado.  You must be silent as the night to sneek past troops in a heavily guarded building. </h4>
+          <h4> The Emperor Is Expecting Nothing Less Than The Full Recovery of His Daughter </h4>
+          <h3>Mission To Do List</h3>
           <Todos todos={this.state.missionTodos} deleteTodo={this.deleteTodo} />
           <AddTodo addTodo={this.addTodo} />
         </div>
-        :null
-
-        }
+        :null}
 
       </div>
     );
   }
 }
-        //<Missions missions={this.state.missions} />
 export default App;

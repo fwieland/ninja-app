@@ -9,9 +9,7 @@ class AddNinja extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     this.props.addingNinja(this.state);
-    this.setState({
-    content: ''
-    })
+
   }
 
   handleLabelChange = (e) => {
@@ -24,7 +22,7 @@ class AddNinja extends Component {
   handleChange = (e) => {
     let ninjaName = '';
     let oldname = e.target.value;
-    let name = oldname.toLowerCase().split('',3);
+    let name = oldname.toLowerCase().split('');
 
     for(let i = 0 ; i < 3; i++) {
       if (name[i] === 'a'){ 
@@ -92,25 +90,22 @@ class AddNinja extends Component {
 
   render() {
     return (
-      <div >
-        <form className="toTitle" onSubmit={this.handleSubmit}>
-          <label htmlFor="name">Name:</label>
-          <input type="text" id='name' onChange={this.handleChange} value={this.state.content} />
+      <div className="toTitle">
+        <form  onSubmit={this.handleSubmit}>
+          <div>
+          <label htmlFor="name">Your Name:</label></div>
+          <div><input type="text" id='name' onChange={this.handleChange} value={this.state.content} /></div>
 
-          <label htmlFor="specialty">Specialty:</label>
-          <select id='specialty' onChange={this.handleLabelChange} value={this.state.content} >
-            <option defaultValue="none"></option>
+          <div><label htmlFor="specialty">Specialty:</label></div>
+          <div><select id='specialty' onChange={this.handleLabelChange} value={this.state.content} >
+            <option defaultValue="Iron Fist Punch">Iron Fist Punch</option>
+            <option value="Cobra Strike Punch">Cobra Strike Punch</option>            
             <option value="Winged Horse Kick">Winged Horse Kick</option>
-            <option value="Leaping Tiger Kick">Leaping Tiger Kick</option>
-            <option value="Forked Lightning Kick">Forked Lightning Kick</option>
-            <option value="Iron Fist Punch">Iron Fist Punch</option>
-            <option value="Tiger's Paw Punch">Tiger's Paw Punch</option>
-            <option value="Cobra Strike Punch">Cobra Strike Punch</option>
-            <option value="Whirlpool Throw">Whirlpool Throw</option>
+            <option value="Lightning Kick">Lightning Kick</option>
             <option value="Dragons Tail Throw">Dragons Tail Throw</option>
             <option value="Teeth Of Tiger Throw">Teeth Of Tiger Throw</option>
-          </select>
-          <button>Add Ninja</button>
+          </select></div>
+          <div><button>Add Ninja</button></div>
         </form>
       </div>
     )
