@@ -2,14 +2,17 @@ import React, { Component } from 'react'
 
 class AddNinja extends Component {
   state = {
-    name: null,
-    specialty: null,
+    name: '',
+    specialty: '',
   }
   
   handleSubmit = (e) => {
     e.preventDefault();
     this.props.addingNinja(this.state);
-  }
+    this.setState({
+      name: '',
+    })
+    }
 
   handleLabelChange = (e) => {
     this.setState({
@@ -18,70 +21,9 @@ class AddNinja extends Component {
     })
   }
 
-  handleChange = (e) => {
-    let ninjaName = '';
-    let oldname = e.target.value;
-    let name = oldname.toLowerCase().split('');
-
-    for(let i = 0 ; i < 3; i++) {
-      if (name[i] === 'a'){ 
-        ninjaName +=  ('ka')
-      }else if (name[i] === 'b'){
-      ninjaName += ('zu')
-        }else if (name[i] === 'c'){
-      ninjaName += ('mi')
-        }else if (name[i] === 'd'){
-      ninjaName += ('te')
-        }else if (name[i] === 'e'){
-      ninjaName += ('ku')  
-        }else if (name[i] === 'f'){
-      ninjaName += ('lu')
-        }else if (name[i] === 'g'){
-      ninjaName += ('ji')
-        }else if (name[i] === 'h'){
-      ninjaName += ('ri')
-        }else if (name[i] === 'i'){
-      ninjaName += ('ki')
-        }else if (name[i] === 'j'){
-      ninjaName += ('zu')
-        }else if (name[i] === 'k'){
-      ninjaName += ('me')
-        }else if (name[i] === 'l'){
-      ninjaName += ('ta')
-        }else if (name[i] === 'm'){
-      ninjaName += ('rin')
-        }else if (name[i] === 'n'){
-      ninjaName += ('to')
-        }else if (name[i] === 'o'){
-      ninjaName += ('mo')
-        }else if (name[i] === 'p'){
-      ninjaName += ('no')
-        }else if (name[i] === 'q'){
-      ninjaName += ('ke')
-        }else if (name[i] === 'r'){
-      ninjaName += ('shi')
-        }else if (name[i] === 's'){
-      ninjaName += ('ari')
-        }else if (name[i] === 't'){
-      ninjaName += ('chi')
-        }else if (name[i] === 'u'){
-      ninjaName += ('do')
-        }else if (name[i] === 'v'){
-      ninjaName += ('ru')
-        }else if (name[i] === 'w'){
-      ninjaName += ('mei')
-        }else if (name[i] === 'x'){
-      ninjaName += ('na')
-        }else if (name[i] === 'y'){
-      ninjaName += ('fu')
-        }else if (name[i] === 'z'){
-      ninjaName += ('zi')
-      }else{
-      ninjaName += ('ti')
-      }; 
-    }
+  handleChange = (onClick) => {
     this.setState({
-      [e.target.id]: ninjaName
+      name: onClick.target.value
     })
   }
 
@@ -91,7 +33,7 @@ class AddNinja extends Component {
         <form  onSubmit={this.handleSubmit}>
           <div>
           <label htmlFor="name">Your Name:</label></div>
-          <div><input type="text" id='name' onChange={this.handleChange} value={this.state.content} />
+          <div><input type="text" id='name' onChange={this.handleChange} value={this.state.name} />
           </div>
 
           <div><label htmlFor="specialty">Specialty:</label></div>
