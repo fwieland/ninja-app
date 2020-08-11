@@ -42,6 +42,7 @@ class RedDawn extends Component {
     return (
 
         <div className="mission">
+          <div id='mission'></div>
           <h2 className="center">Red Blood Dawn</h2>
           <h4>Princess Takara has been captured by the invading Mongolians! She is held up in the fortress of Hirado.  You must be silent as the night to sneek past troops in a heavily guarded building. </h4>
           <h4> The Emperor Is Expecting Nothing Less Than The Full Recovery of His Daughter </h4>

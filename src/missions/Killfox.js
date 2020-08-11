@@ -45,8 +45,9 @@ class Killfox extends Component {
     return (
 
         <div className="mission">
+          <div id='mission'></div>
           <h2 className="center">To Kill A Fox</h2>
-          <h4>Kublah Khan's top general, Liu Fuxiang  will be going to a ball at the palace of korea; from the balcony there you will get one chance with your Yumi bow to take out this Mongolian general and greatly change the fate of Japan. You may perish in the aftermath. </h4>
+          <h4>Kublah Khan's top general, Liu Fuxiang  will be going to a ball at the palace of korea 3 days from now; from the balcony there you will get one chance with your Yumi bow to take out this Mongolian general and greatly change the fate of Japan. You might not survive. </h4>
           <h4> The Empire of the sun is counting on you </h4>
           <h3>Mission To Do List</h3>
           <label>( touch item to delete )</label>

@@ -42,6 +42,7 @@ class Firebase extends Component {
     return (
 
         <div className="mission">
+          <div id='mission'></div>
           <h2 className="center">Firebase</h2>
           <h4> Our Informat has let us know of a great weapons stash loaded on a enemies ship in the harbor of Harido. It is your job to sink or destroy ship to inhibit the mighty mongolian army.</h4>
           <h4> The General of the Empires majesty has entrusted you with this mission. </h4>

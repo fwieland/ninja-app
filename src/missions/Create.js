@@ -34,6 +34,7 @@ class Create extends Component {
     return (
 
         <div className="mission">
+          <div id='mission'></div>
           <h2 className="center">Mission</h2>
           <h3>Mission To Do List</h3>
           <label>( touch item to delete )</label>

@@ -1,14 +1,14 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import star from './star.svg';
 import './App.css';
 import Ninjas from './Ninjas';
 import AddNinja from './AddNinja';
-import{BrowserRouter} from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import Create from './missions/Create';
 import RedDawn from './missions/RedDawn';
 import Firebase from './missions/Firebase';
 import Killfox from './missions/Killfox';
-
+import Navbar from './missions/Navbar';
 
 class App extends Component {
   constructor(){
@@ -63,17 +63,18 @@ class App extends Component {
         
         <AddNinja addingNinja={this.addingNinja} />
 
-        <button onClick={()=>this.operation()}>Create Mission</button>
-        <button onClick={()=>this.operation()}>Mission: Red Blood Dawn</button>
-        <button onClick={()=>this.operation()}>Mission: Firebase</button>
-        <button onClick={()=>this.operation()}>Mission: To Kill A Fox</button>
+
         <Ninjas ninjas={this.state.ninjas}  deleteNinja={this.deleteNinja} />
 
-        {this.state.showMissions? <Create />       :null}
-        {this.state.showMissions? <RedDawn />       :null}
-        {this.state.showMissions? <Firebase />       :null}
-        {this.state.showMissions? <Killfox />       :null}
+        <div>
 
+          <Navbar />
+            <Route path='/Create' component={Create} />
+            <Route path='/RedDawn' component={RedDawn} />  
+            <Route path='/Firebase' component={Firebase} />  
+            <Route path='/Killfox' component={Killfox} />       
+
+        </div>
       </div>
       </BrowserRouter>
     );
@@ -81,3 +82,11 @@ class App extends Component {
 }
 export default App;
 
+        //{this.state.showMissions?         :null}
+
+        /*
+                <button onClick={()=>this.operation()}>Create Mission</button>
+        <button onClick={()=>this.operation()}>Mission: Red Blood Dawn</button>
+        <button onClick={()=>this.operation()}>Mission: Firebase</button>
+        <button onClick={()=>this.operation()}>Mission: To Kill A Fox</button>
+        */

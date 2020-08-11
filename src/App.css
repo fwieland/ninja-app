@@ -15,6 +15,7 @@ h1, h2, h3  {
   font-size: 3rem;
   color: lightblue;
   margin-top: 4rem;
+  margin-bottom: 7%;
 }
 h1{
   font-size: 4rem;
@@ -31,6 +32,10 @@ div{
 }
 span{
   color: white;
+  text-decoration: underline;
+}
+select{
+  max-width: 180px;
 }
 .App {
   text-align: center;
@@ -42,7 +47,9 @@ span{
   margin: 0 auto;
 }
 button{
-  max-width: 7rem;
+  text-decoration: none;
+  width: 180px;
+  height: 50px;
 }
 .App-logo {
   height: 40vmin;
@@ -84,11 +91,25 @@ form{
 }
 .ninja{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
 }
 .ninja img{
   max-width: 70px;
+}
+.mission-buttons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0%;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+#mission{
+  height: 0.5vw;
 }
 @keyframes App-logo-spin {
   from {
