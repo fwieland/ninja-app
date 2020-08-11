@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "34f96d6441e452eb04527c7890e3632e",
+    "revision": "e5b58d8a493980cb2f5aba0507185c0b",
     "url": "/ninja-app/index.html"
   },
   {
-    "revision": "fa54b9255583814550c6",
-    "url": "/ninja-app/static/css/main.5b571d27.chunk.css"
+    "revision": "805400f02060a4e2a8f5",
+    "url": "/ninja-app/static/css/main.aa652ae6.chunk.css"
   },
   {
-    "revision": "21853adf3327179adc26",
-    "url": "/ninja-app/static/js/2.f11b6b33.chunk.js"
+    "revision": "0e85b779903dab384dfb",
+    "url": "/ninja-app/static/js/2.c63aca6a.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/ninja-app/static/js/2.f11b6b33.chunk.js.LICENSE.txt"
+    "url": "/ninja-app/static/js/2.c63aca6a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fa54b9255583814550c6",
-    "url": "/ninja-app/static/js/main.27a5c4df.chunk.js"
+    "revision": "805400f02060a4e2a8f5",
+    "url": "/ninja-app/static/js/main.8699d977.chunk.js"
   },
   {
     "revision": "585fe5fc184e262f6bf6",
