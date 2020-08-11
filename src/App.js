@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import star from './star.svg';
+import star from './media/star.svg';
 import './App.css';
 import Ninjas from './Ninjas';
 import AddNinja from './AddNinja';

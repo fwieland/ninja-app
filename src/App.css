@@ -1,5 +1,5 @@
-@font-face { font-family: NightinTokyo; src: url('./NightinTokyo.ttf'); }
-@font-face { font-family: RagingRedLotusBB; src: url('./RagingRedLotusBB.ttf')}
+@font-face { font-family: NightinTokyo; src: url('./media/NightinTokyo.ttf'); }
+@font-face { font-family: RagingRedLotusBB; src: url('./media/RagingRedLotusBB.ttf')}
 
 body{
   background-color: rgb(43,43,43);

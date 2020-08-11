@@ -1,5 +1,5 @@
 import React from 'react';
-import lilninja from './lilninja.png'
+import lilninja from './media/lilninja.png';
 
 const Ninjas  = ({ninjas, deleteNinja}) => {
 
