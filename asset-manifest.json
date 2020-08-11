@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/ninja-app/static/css/main.31c6ba90.chunk.css",
+    "main.js": "/ninja-app/static/js/main.31c6ce96.chunk.js",
+    "main.js.map": "/ninja-app/static/js/main.31c6ce96.chunk.js.map",
+    "runtime-main.js": "/ninja-app/static/js/runtime-main.9a589334.js",
+    "runtime-main.js.map": "/ninja-app/static/js/runtime-main.9a589334.js.map",
+    "static/js/2.f11b6b33.chunk.js": "/ninja-app/static/js/2.f11b6b33.chunk.js",
+    "static/js/2.f11b6b33.chunk.js.map": "/ninja-app/static/js/2.f11b6b33.chunk.js.map",
+    "index.html": "/ninja-app/index.html",
+    "precache-manifest.dfb4d77864e63c96ca367f61820f9eb7.js": "/ninja-app/precache-manifest.dfb4d77864e63c96ca367f61820f9eb7.js",
+    "service-worker.js": "/ninja-app/service-worker.js",
+    "static/css/main.31c6ba90.chunk.css.map": "/ninja-app/static/css/main.31c6ba90.chunk.css.map",
+    "static/js/2.f11b6b33.chunk.js.LICENSE.txt": "/ninja-app/static/js/2.f11b6b33.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/ninja-app/static/media/RagingRedLotusBB.d83a7d12.ttf",
+    "static/media/lilninja.png": "/ninja-app/static/media/lilninja.ec560f2c.png",
+    "static/media/star.svg": "/ninja-app/static/media/star.337e1f36.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9a589334.js",
+    "static/js/2.f11b6b33.chunk.js",
+    "static/css/main.31c6ba90.chunk.css",
+    "static/js/main.31c6ce96.chunk.js"
+  ]
+}
