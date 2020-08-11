@@ -9,7 +9,6 @@ class AddNinja extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     this.props.addingNinja(this.state);
-
   }
 
   handleLabelChange = (e) => {
@@ -78,8 +77,7 @@ class AddNinja extends Component {
         }else if (name[i] === 'z'){
       ninjaName += ('zi')
       }else{
-        ninjaName = ("Invalid name, use at least 3 aphabet letters");
-        break;
+      ninjaName += ('ti')
       }; 
     }
     this.setState({
@@ -87,23 +85,24 @@ class AddNinja extends Component {
     })
   }
 
-
   render() {
     return (
       <div className="toTitle">
         <form  onSubmit={this.handleSubmit}>
           <div>
           <label htmlFor="name">Your Name:</label></div>
-          <div><input type="text" id='name' onChange={this.handleChange} value={this.state.content} /></div>
+          <div><input type="text" id='name' onChange={this.handleChange} value={this.state.content} />
+          </div>
 
           <div><label htmlFor="specialty">Specialty:</label></div>
           <div><select id='specialty' onChange={this.handleLabelChange} value={this.state.content} >
-            <option defaultValue="Iron Fist Punch">Iron Fist Punch</option>
+            <option defaultValue="Unknown"></option>          
+            <option value="Iron Fist Punch">Iron Fist Punch</option>
             <option value="Cobra Strike Punch">Cobra Strike Punch</option>            
             <option value="Winged Horse Kick">Winged Horse Kick</option>
             <option value="Lightning Kick">Lightning Kick</option>
             <option value="Dragons Tail Throw">Dragons Tail Throw</option>
-            <option value="Teeth Of Tiger Throw">Teeth Of Tiger Throw</option>
+            <option value="Tiger Teeth Throw">Tiger Teeth Throw</option>
           </select></div>
           <div><button>Add Ninja</button></div>
         </form>

@@ -7,11 +7,11 @@ import {HashLink as Link} from 'react-router-hash-link';
       <nav className="navbar">
         <div>
           <ul className="mission-buttons">
-            <h2>Missions:</h2>
-            <button><Link to="/Create#mission">Create A Mission</Link></button>
-            <button><Link to="/Firebase#mission">Firebase</Link></button>
-            <button><Link to="/Killfox#mission">To Kill A Fox</Link></button>
-            <button><Link to="/RedDawn#mission">Red Blood Dawn</Link></button>                                    
+            <h2>Missions</h2>
+            <Link to="/Create#mission"><button>Create A Mission</button></Link>
+            <Link to="/Firebase#mission"><button>Firebase</button></Link>
+            <Link to="/Killfox#mission"><button>To Kill A Fox</button></Link>
+            <Link to="/RedDawn#mission"><button>Red Blood Dawn</button></Link>                                   
           </ul>
         </div>
       </nav>

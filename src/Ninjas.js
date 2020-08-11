@@ -12,7 +12,7 @@ const Ninjas  = ({ninjas, deleteNinja}) => {
               <img src={lilninja} alt='ninja'></img>
               <div>Your Ninja Name: {ninja.name} <br />
               Specialty: {ninja.specialty}</div>
-              <button onClick={() => {deleteNinja(ninja.id)}}>x</button>           
+              <button className='delete-ninja' onClick={() => {deleteNinja(ninja.id)}}>X</button>           
             </div>
           ) : null;
         })

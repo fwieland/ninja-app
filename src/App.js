@@ -4,17 +4,17 @@ import './App.css';
 import Ninjas from './Ninjas';
 import AddNinja from './AddNinja';
 import { BrowserRouter, Route } from 'react-router-dom';
+import Navbar from './missions/Navbar';
 import Create from './missions/Create';
 import RedDawn from './missions/RedDawn';
 import Firebase from './missions/Firebase';
 import Killfox from './missions/Killfox';
-import Navbar from './missions/Navbar';
 
 class App extends Component {
   constructor(){
     super()
     this.state ={
-      showMissions:false,
+      showNinjas:false,
       ninjas: [
       ],
       missionTodos: [
@@ -40,7 +40,7 @@ class App extends Component {
 
   operation(){
     this.setState({
-      showMissions:!this.state.showMissions
+      showNinjas:!this.state.showNinjas
     })
   }
 
@@ -50,6 +50,8 @@ class App extends Component {
   componentDidUpdate(){
     console.log('component updated')
   }
+
+
   render() {
     return (
       <BrowserRouter>
@@ -63,7 +65,7 @@ class App extends Component {
         
         <AddNinja addingNinja={this.addingNinja} />
 
-
+{this.setState.showNinjas?   <h3>Ninjas</h3>      :null}
         <Ninjas ninjas={this.state.ninjas}  deleteNinja={this.deleteNinja} />
 
         <div>
@@ -73,7 +75,6 @@ class App extends Component {
             <Route path='/RedDawn' component={RedDawn} />  
             <Route path='/Firebase' component={Firebase} />  
             <Route path='/Killfox' component={Killfox} />       
-
         </div>
       </div>
       </BrowserRouter>

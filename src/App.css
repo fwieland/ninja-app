@@ -21,11 +21,9 @@ h1{
   font-size: 4rem;
   margin: 0.1em;
 }
-h3{
-  text-decoration: underline;
-}
 label{
   color: lightblue;
+  font-size: 2rem;
 }
 div{
   text-transform: capitalize;
@@ -39,17 +37,24 @@ select{
 }
 .App {
   text-align: center;
-  min-height: 100vh;
   color:white;
 }
-.mission{
-  max-width: 66vw;
+div.mission{
+  max-width: 80vw;
   margin: 0 auto;
 }
 button{
   text-decoration: none;
   width: 180px;
   height: 50px;
+}
+input{
+  width: 180px;
+}
+.delete-ninja{
+  width: 25px;
+  height: 50px;
+  background-color: grey;
 }
 .App-logo {
   height: 40vmin;
@@ -63,7 +68,6 @@ button{
 }
 
 .App-header {
-  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -86,17 +90,18 @@ button{
   margin-top: 0.5rem;
   margin: 0 auto;
 }
-form{
-  height: 66vw;
-}
+
 .ninja{
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  max-width: 500px;
+  margin: 0 auto;
 }
-.ninja img{
+div.ninja img{
   max-width: 70px;
+  max-height: 70px;
 }
 .mission-buttons{
   display: flex;
@@ -109,7 +114,7 @@ a {
   color: black;
 }
 #mission{
-  height: 0.5vw;
+  height: 1px;
 }
 @keyframes App-logo-spin {
   from {
