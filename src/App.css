@@ -1,21 +1,27 @@
 @font-face { font-family: NightinTokyo; src: url('./media/NightinTokyo.ttf'); }
-@font-face { font-family: RagingRedLotusBB; src: url('./media/RagingRedLotusBB.ttf')}
+@font-face { font-family: RagingRedLotusBB; src: url('./media/RagingRedLotusBB.ttf');}
+@font-face { font-family: MaShanZheng; src: url('./media/MaShanZheng-Regular.ttf');}
+@font-face { font-family: NanumBrushScript; src: url('./media/NanumBrushScript-Regular.ttf');}
+
 
 body{
   background-color: rgb(43,43,43);
 }
 span, div, button, input, select, option, h4, h5, h6{
-  font-family: RagingRedLotusBB;
+font-family: 'NanumBrushScript', cursive;
   text-align: center;
   font-size: 2rem;
   margin: 0.5rem;
 }
-h1, h2, h3  {
+h1, h2, h3 {
   font-family: NightinTokyo;
   font-size: 3rem;
   color: lightblue;
   margin-top: 4rem;
   margin-bottom: 7%;
+}
+button, label{
+font-family: MaShanZheng
 }
 h1{
   font-size: 4rem;
@@ -26,14 +32,14 @@ label{
   font-size: 2rem;
 }
 div{
-  text-transform: capitalize;
+  text-transform: none;
 }
 span{
   color: white;
   text-decoration: underline;
 }
 select{
-  max-width: 180px;
+  width: 250px;
 }
 .App {
   text-align: center;
@@ -45,11 +51,11 @@ div.mission{
 }
 button{
   text-decoration: none;
-  width: 180px;
+  width: 250px;
   height: 50px;
 }
 input{
-  width: 180px;
+  width: 242px;
 }
 .delete-ninja{
   width: 25px;

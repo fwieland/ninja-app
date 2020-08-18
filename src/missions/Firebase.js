@@ -44,8 +44,8 @@ class Firebase extends Component {
         <div className="mission">
           <div id='mission'></div>
           <h2 className="center">Firebase</h2>
-          <h4> Our Informat has let us know of a great weapons stash loaded on a ship in the harbor of Harido. It is your job to destroy the cache of weapons by any means necessary. This will weaken the mongolian army that is against us. </h4>
-          <h4> The General of the Empires majesty has entrusted you with this mission. </h4>
+          <p> Our Informat has let us know of a great weapons stash loaded on a ship in the harbor of Harido. It is your job to destroy the cache of weapons by any means necessary. This will weaken the mongolian army that is against us. </p>
+          <p> The General of the Empires majesty has entrusted you with this mission. </p>
           <h3>Mission To Do List</h3>
           <label>( touch finished items )</label>
           <Todos todos={this.state.missionTodos} deleteTodo={this.deleteTodo} />

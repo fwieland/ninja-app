@@ -32,11 +32,11 @@ class AddNinja extends Component {
       <div className="toTitle">
         <form  onSubmit={this.handleSubmit}>
           <div>
-          <label htmlFor="name">Your Name:</label></div>
+          <label htmlFor="name">Enter Ninjas Name:</label></div>
           <div><input type="text" id='name' onChange={this.handleChange} value={this.state.name} />
           </div>
 
-          <div><label htmlFor="specialty">Specialty:</label></div>
+          <div><label htmlFor="specialty">Ninjas Specialty:</label></div>
           <div><select id='specialty' onChange={this.handleLabelChange} value={this.state.content} >
             <option defaultValue="Unknown"></option>          
             <option value="Iron Fist Punch">Iron Fist Punch</option>

@@ -70,11 +70,11 @@ class App extends Component {
 
         <div>
 
-          <Navbar />
-            <Route path='/Create' component={Create} />
+          <Navbar />     
             <Route path='/RedDawn' component={RedDawn} />  
             <Route path='/Firebase' component={Firebase} />  
-            <Route path='/Killfox' component={Killfox} />       
+            <Route path='/Killfox' component={Killfox} /> 
+            <Route path='/Create' component={Create} />
         </div>
       </div>
       </BrowserRouter>
