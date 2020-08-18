@@ -7,7 +7,7 @@ const Todos = ({todos, deleteTodo}) => {
       <div className="collection-item" key={todo.id}>
         <li onClick={()=> {deleteTodo(todo.id)}}>{todo.content}</li>
       </div>)})) 
-  : (<h2 className="center">Omedeto Ninja! Mission Completed!</h2>)
+  : (<h2 className="center">Omedeto! Mission Completed!</h2>)
 
     return (
     <div className="Ninjatodos collection">

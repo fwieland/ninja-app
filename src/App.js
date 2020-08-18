@@ -69,7 +69,6 @@ class App extends Component {
         <Ninjas ninjas={this.state.ninjas}  deleteNinja={this.deleteNinja} />
 
         <div>
-
           <Navbar />     
             <Route path='/RedDawn' component={RedDawn} />  
             <Route path='/Firebase' component={Firebase} />  

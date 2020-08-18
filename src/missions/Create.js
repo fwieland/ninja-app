@@ -11,7 +11,7 @@ class Create extends Component {
     this.state ={
       showMissions:false,
       missionTodos: [
-        {id: 1, content: 'Create Custom Mission Below'},        
+        {id: 1, content: '(Example assignment)'},        
       ]
     }
   }
@@ -36,9 +36,12 @@ class Create extends Component {
         <div className="mission">
           <div id='mission'></div>
           <h3>Mission To Do List</h3>
+          <p>Add assignments below according to your mission</p>          
+          <AddTodo addTodo={this.addTodo} />          
+
           <label>( touch item to delete )</label>
           <Todos todos={this.state.missionTodos} deleteTodo={this.deleteTodo} />
-          <AddTodo addTodo={this.addTodo} />
+
         </div>
 
     )

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {HashLink as Link} from 'react-router-hash-link';
 
 class AddNinja extends Component {
   state = {
@@ -47,6 +48,7 @@ class AddNinja extends Component {
             <option value="Tiger Teeth Throw">Tiger Teeth Throw</option>
           </select></div>
           <div><button>Add Ninja</button></div>
+          <Link to="./Navbar#navbar"><button>Done</button></Link> 
         </form>
       </div>
     )

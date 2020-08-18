@@ -46,10 +46,10 @@ class RedDawn extends Component {
           <h2 className="center">Red Blood Dawn</h2>
           <p>Princess Takara has been captured by the invading Mongolians! She is held up in the fortress of Hirado. You must be silent as the night to sneek past troops, in a heavily guarded area. </p>
           <p> The Emperor Is Expecting Nothing Less Than The Full Recovery of His Daughter </p>
-          <h3>Mission To Do List</h3>
-          <label>( touch item to delete )</label>
+          <h3>Mission To Do List</h3>        
+          <label>( touch item below to delete )</label>
           <Todos todos={this.state.missionTodos} deleteTodo={this.deleteTodo} />
-          <AddTodo addTodo={this.addTodo} />
+          <AddTodo addTodo={this.addTodo} />  
         </div>
 
     )

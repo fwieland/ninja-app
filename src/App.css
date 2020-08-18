@@ -20,7 +20,7 @@ h1, h2, h3 {
   margin-bottom: 7%;
 }
 button, label{
-font-family: MaShanZheng
+font-family: MaShanZheng;
 }
 h1{
   font-size: 4rem;
@@ -57,15 +57,14 @@ input{
   width: 242px;
 }
 .delete-ninja{
-  width: 25px;
-  height: 50px;
+  width: 33px;
+  height: 33px;
   background-color: grey;
 }
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 12s linear;
@@ -107,6 +106,9 @@ input{
 div.ninja img{
   max-width: 70px;
   max-height: 70px;
+}
+div#navbar{
+  margin-bottom: 200px;
 }
 .mission-buttons{
   display: flex;

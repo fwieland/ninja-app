@@ -5,7 +5,7 @@ import {HashLink as Link} from 'react-router-hash-link';
   const Navbar = () => {
     return (
       <nav className="navbar">
-        <div>
+        <div id="navbar">
           <ul className="mission-buttons">
             <h2>Missions</h2>
             <Link to="/RedDawn#mission"><button>Red Blood Dawn</button></Link>             
