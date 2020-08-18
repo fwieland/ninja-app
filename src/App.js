@@ -65,7 +65,7 @@ class App extends Component {
         
         <AddNinja addingNinja={this.addingNinja} />
 
-{this.setState.showNinjas?   <h3>Ninjas</h3>      :null}
+        {this.setState.showNinjas?   <h3>Ninjas</h3>      :null}
         <Ninjas ninjas={this.state.ninjas}  deleteNinja={this.deleteNinja} />
 
         <div>
@@ -82,12 +82,3 @@ class App extends Component {
   }
 }
 export default App;
-
-        //{this.state.showMissions?         :null}
-
-        /*
-                <button onClick={()=>this.operation()}>Create Mission</button>
-        <button onClick={()=>this.operation()}>Mission: Red Blood Dawn</button>
-        <button onClick={()=>this.operation()}>Mission: Firebase</button>
-        <button onClick={()=>this.operation()}>Mission: To Kill A Fox</button>
-        */
