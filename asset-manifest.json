@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ninja-app/static/css/main.3bd19888.chunk.css",
-    "main.js": "/ninja-app/static/js/main.b13b52b1.chunk.js",
-    "main.js.map": "/ninja-app/static/js/main.b13b52b1.chunk.js.map",
+    "main.css": "/ninja-app/static/css/main.1eac8916.chunk.css",
+    "main.js": "/ninja-app/static/js/main.6ace1799.chunk.js",
+    "main.js.map": "/ninja-app/static/js/main.6ace1799.chunk.js.map",
     "runtime-main.js": "/ninja-app/static/js/runtime-main.9a589334.js",
     "runtime-main.js.map": "/ninja-app/static/js/runtime-main.9a589334.js.map",
     "static/js/2.99fb07fa.chunk.js": "/ninja-app/static/js/2.99fb07fa.chunk.js",
     "static/js/2.99fb07fa.chunk.js.map": "/ninja-app/static/js/2.99fb07fa.chunk.js.map",
     "index.html": "/ninja-app/index.html",
-    "precache-manifest.953cc48a7e435867e48a197aad4e4264.js": "/ninja-app/precache-manifest.953cc48a7e435867e48a197aad4e4264.js",
+    "precache-manifest.0fd6ab04a491298c36e2ec62a59e1909.js": "/ninja-app/precache-manifest.0fd6ab04a491298c36e2ec62a59e1909.js",
     "service-worker.js": "/ninja-app/service-worker.js",
-    "static/css/main.3bd19888.chunk.css.map": "/ninja-app/static/css/main.3bd19888.chunk.css.map",
+    "static/css/main.1eac8916.chunk.css.map": "/ninja-app/static/css/main.1eac8916.chunk.css.map",
     "static/js/2.99fb07fa.chunk.js.LICENSE.txt": "/ninja-app/static/js/2.99fb07fa.chunk.js.LICENSE.txt",
     "static/media/App.css": "/ninja-app/static/media/NightinTokyo.26d04666.ttf",
     "static/media/lilninja.png": "/ninja-app/static/media/lilninja.ec560f2c.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.9a589334.js",
     "static/js/2.99fb07fa.chunk.js",
-    "static/css/main.3bd19888.chunk.css",
-    "static/js/main.b13b52b1.chunk.js"
+    "static/css/main.1eac8916.chunk.css",
+    "static/js/main.6ace1799.chunk.js"
   ]
 }
