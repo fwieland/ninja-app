@@ -6,11 +6,13 @@
 body{
   background-color: rgb(43,43,43);
 }
-span, div, button, input, select, option, h4, h5, h6{
+p, span, div, button, input, select, option, h4, h5, h6{
 font-family: 'NanumBrushScript', cursive;
   text-align: center;
   font-size: 2rem;
-  margin: 0.5rem;
+  line-height: 0.88;
+  margin-block-start: 1%;
+  margin-block-end: 1%;
 }
 h1, h2, h3 {
   font-family: NightinTokyo;
