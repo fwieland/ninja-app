@@ -3,7 +3,7 @@
 @font-face { font-family: NanumBrushScript; src: url('./media/NanumBrushScript-Regular.ttf');}
 
 
-body{
+body, button{
   background-color: rgb(43,43,43);
 }
 p, span, div, button, input, select, option, h4, h5, h6{
@@ -11,6 +11,9 @@ font-family: 'NanumBrushScript', cursive;
   text-align: center;
   font-size: 2rem;
   line-height: 0.88;
+  margin: 0.66%;
+}
+p{
   margin-block-start: 1%;
   margin-block-end: 1%;
 }
@@ -23,6 +26,13 @@ h1, h2, h3 {
 }
 h4{
   text-decoration: underline;
+}
+button{
+  border-color: lightblue;
+  color: lightblue;
+  text-decoration: none;
+  width: 250px;
+  height: 50px;
 }
 button, label{
 font-family: MaShanZheng, Georgia, 'Times New Roman', Times, serif;
@@ -53,18 +63,14 @@ div.mission{
   max-width: 80vw;
   margin: 0 auto;
 }
-button{
-  text-decoration: none;
-  width: 250px;
-  height: 50px;
-}
 input{
   width: 242px;
 }
 .delete-ninja{
   width: 33px;
   height: 33px;
-  background-color: grey;
+  border-color: black;
+  color: rgb(255, 0, 0);
 }
 .App-logo {
   height: 40vmin;
@@ -118,8 +124,11 @@ div.ninja img{
 div.addspace{
   margin-bottom: 220px;
 }
-div.minspace{
+.minspace{
   margin-bottom: 120px;
+}
+  .xsspace{
+  margin-bottom: 25px;
 }
 .mission-buttons{
   display: flex;
@@ -129,7 +138,7 @@ div.minspace{
 }
 a {
   text-decoration: none;
-  color: black;
+  color: lightblue;
 }
 #mission{
   height: 1px;
@@ -147,4 +156,9 @@ a {
   to {
     transform: rotate(360deg);
   }
+}
+@media only screen and (min-width: 665px){
+  .xsspace{
+  margin-bottom: 75px;
+}
 }

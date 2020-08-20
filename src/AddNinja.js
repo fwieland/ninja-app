@@ -47,8 +47,8 @@ class AddNinja extends Component {
             <option value="Dragons Tail Throw">Dragons Tail Throw</option>
             <option value="Tiger Teeth Throw">Tiger Teeth Throw</option>
           </select></div>
-          <div><button>Add Ninja</button></div>
-          <Link to="./Navbar#navbar"><button>Done</button></Link> 
+          <div><button >Add Ninja</button></div>
+          <Link to="./Navbar#navbar"><button className="xsspace">Done</button></Link> 
         </form>
       </div>
     )
