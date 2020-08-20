@@ -50,6 +50,7 @@ class Firebase extends Component {
           <label>( touch finished items )</label>
           <Todos todos={this.state.missionTodos} deleteTodo={this.deleteTodo} />
           <AddTodo addTodo={this.addTodo} />
+          <div className="minspace"></div>          
         </div>
 
     )

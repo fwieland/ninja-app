@@ -11,7 +11,8 @@ const Ninjas  = ({ninjas, deleteNinja}) => {
             <div className="ninja" key={ninja.id}>
               <img src={lilninja} alt='ninja'></img>
               <div>
-                {ninja.name},{ninja.specialty}
+                {ninja.name} <br />
+                {ninja.specialty}
               </div>
               <button className='delete-ninja' onClick={() => {deleteNinja(ninja.id)}}>X</button>           
             </div>

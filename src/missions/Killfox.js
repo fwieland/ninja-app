@@ -53,6 +53,7 @@ class Killfox extends Component {
           <label>( touch item to delete )</label>
           <Todos todos={this.state.missionTodos} deleteTodo={this.deleteTodo} />
           <AddTodo addTodo={this.addTodo} />
+          <div className="minspace"></div>          
         </div>
 
     )

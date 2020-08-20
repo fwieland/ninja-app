@@ -9,6 +9,7 @@ class AddNinja extends Component {
   
   handleSubmit = (e) => {
     e.preventDefault();
+    this.state.name.trim();
     this.props.addingNinja(this.state);
     this.setState({
       name: '',
@@ -32,8 +33,7 @@ class AddNinja extends Component {
     return (
       <div className="toTitle">
         <form  onSubmit={this.handleSubmit}>
-          <div>
-          <label htmlFor="name">Enter Ninjas Name:</label></div>
+          <div><label htmlFor="name">Enter Ninjas Name:</label></div>
           <div><input type="text" id='name' onChange={this.handleChange} value={this.state.name} />
           </div>
 

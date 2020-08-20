@@ -17,10 +17,13 @@ h1, h2, h3 {
   font-size: 3rem;
   color: lightblue;
   margin-top: 4rem;
-  margin-bottom: 7%;
+  margin-bottom: 1%;
+}
+h4{
+  text-decoration: underline;
 }
 button, label{
-font-family: MaShanZheng;
+font-family: MaShanZheng, Georgia, 'Times New Roman', Times, serif;
 }
 h1{
   font-size: 4rem;
@@ -103,12 +106,18 @@ input{
   max-width: 500px;
   margin: 0 auto;
 }
+div.ninja{
+  align-items: center;
+}
 div.ninja img{
   max-width: 70px;
   max-height: 70px;
 }
-div#navbar{
-  margin-bottom: 200px;
+div.addspace{
+  margin-bottom: 220px;
+}
+div.minspace{
+  margin-bottom: 120px;
 }
 .mission-buttons{
   display: flex;
@@ -122,6 +131,12 @@ a {
 }
 #mission{
   height: 1px;
+}
+.hideInfo{
+  display: none;
+}
+.showInfo{
+  display: contents;
 }
 @keyframes App-logo-spin {
   from {

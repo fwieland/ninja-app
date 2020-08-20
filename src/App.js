@@ -3,6 +3,7 @@ import star from './media/star.svg';
 import './App.css';
 import Ninjas from './Ninjas';
 import AddNinja from './AddNinja';
+import GameInfo from './GameInfo';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Navbar from './missions/Navbar';
 import Create from './missions/Create';
@@ -62,10 +63,9 @@ class App extends Component {
           <h1>Shinobi</h1>
           <h1>Ninja</h1>
         </header>
-        
+        <GameInfo />
         <AddNinja addingNinja={this.addingNinja} />
 
-        {this.setState.showNinjas?   <h3>Ninjas</h3>      :null}
         <Ninjas ninjas={this.state.ninjas}  deleteNinja={this.deleteNinja} />
 
         <div>
@@ -75,7 +75,9 @@ class App extends Component {
             <Route path='/Killfox' component={Killfox} /> 
             <Route path='/Create' component={Create} />
         </div>
+
       </div>
+
       </BrowserRouter>
     );
   }

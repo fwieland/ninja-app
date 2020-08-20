@@ -50,6 +50,7 @@ class RedDawn extends Component {
           <label>( touch item below to delete )</label>
           <Todos todos={this.state.missionTodos} deleteTodo={this.deleteTodo} />
           <AddTodo addTodo={this.addTodo} />  
+          <div className="minspace"></div>
         </div>
 
     )
