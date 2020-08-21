@@ -6,7 +6,7 @@
 body, button{
   background-color: rgb(43,43,43);
 }
-p, span, div, button, input, select, option, h4, h5, h6{
+p, span, div, button, input, select, textarea, option, h4, h5, h6{
 font-family: 'NanumBrushScript', cursive;
   text-align: center;
   font-size: 2rem;
@@ -70,7 +70,7 @@ input{
   width: 33px;
   height: 33px;
   border-color: black;
-  color: rgb(255, 0, 0);
+  color: black;
 }
 .App-logo {
   height: 40vmin;
@@ -148,6 +148,16 @@ a {
 }
 .showInfo{
   display: contents;
+}
+textarea.largeTextArea{
+  height: 90px;
+  width: 250px;
+}
+.taskform{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 @keyframes App-logo-spin {
   from {

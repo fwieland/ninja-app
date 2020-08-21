@@ -20,10 +20,9 @@ class AddTodo extends Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.handleSubmit}>
-          <label>( Add New Task )</label>
-          <input type="text" onChange={this.handleChange} value={this.state.content}></input>
-          <button>Add</button>
+        <form className="taskform" onSubmit={this.handleSubmit}>
+          <textarea className="largeTextArea" type="text" rows='3' onChange={this.handleChange} value={this.state.content}></textarea>
+          <button>Add New Task</button>
         </form>
       </div>
     )
