@@ -16,6 +16,8 @@ font-family: 'NanumBrushScript', cursive;
 p{
   margin-block-start: 1%;
   margin-block-end: 1%;
+  padding-right: 12px;
+  padding-left: 12px;
 }
 h1, h2, h3 {
   font-family: NightinTokyo;
@@ -140,6 +142,7 @@ a {
   text-decoration: none;
   color: lightblue;
 }
+
 #mission{
   height: 1px;
 }
@@ -150,8 +153,8 @@ a {
   display: contents;
 }
 textarea.largeTextArea{
-  height: 90px;
-  width: 250px;
+  height: 60px;
+  width: 500px;
 }
 .taskform{
   display: flex;
@@ -170,5 +173,9 @@ textarea.largeTextArea{
 @media only screen and (min-width: 665px){
   .xsspace{
   margin-bottom: 75px;
-}
+  }
+  p{
+    max-width: 70%;
+    margin: 0 auto;
+  }
 }
